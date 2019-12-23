@@ -1,1 +1,2 @@
-from .autoencoders import DenseLayerAutoencoder, SparseLayerAutoencoder
+from .autoencoders import DenseLayerAutoencoder
+from pretrain import pretrain_model
