@@ -1,5 +1,7 @@
-# tied-autoencoder-keras
-Autoencoder layers (with tied encode and decode weights) for Keras
+# Autoencoder-keras
+Autoencoder layers for Keras
+
+_Note:fork updated to TensorFlow 2.0_
 
 Tutorial: [https://amiralavi.net/blog/2018/08/25/tied-autoencoders](https://amiralavi.net/blog/2018/08/25/tied-autoencoders)
 
@@ -14,5 +16,3 @@ x = DenseLayerAutoencoder([100, 50, 20], activation='tanh')(inputs)
 model = Model(inputs=inputs, outputs=x)
 print(model.summary())
 ```
-
-`DenseLayerAutoencoder` also provides a `encode` and `decode` function (which are both called by the `call` function).
